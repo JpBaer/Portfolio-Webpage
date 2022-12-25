@@ -1,0 +1,139 @@
+* {
+    font-family: Helvetica, sans-serif;
+    color:#fff;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  #364958;
+    margin: 0
+}
+
+header {
+    display: flex;
+    background-color:#55828B;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+footer {
+    width: 100%;
+    background-color:#55828B;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+section {
+    width: 80% ;
+    margin: 0 auto
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-weight: 500;
+}
+hr {
+    align-content: center;
+    width: 30%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+section{
+    width:100%;
+}
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.profile_picture {
+    flex: 1 1;  
+    object-fit:contain;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 300px;
+
+  
+}
+
+
+.about_container {
+    flex: 1 0 200px;
+    margin: 20px;
+    padding-bottom: 20px;
+   
+}
+
+.portfolio {
+    background-color: #55828B;
+    display: flex;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    font-size: 17px;
+    display: inline;
+    margin: 5px;
+    border-right: 1px solid #fff;
+    
+    }
+li:last-child {
+    border-right:0;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+ color: black
+}
+
+#logo {
+    position:absolute;
+    top:-40px;
+    left: -700px;
+}
+
+.contact_section {
+    width: 100%;
+    border: 2px solid #fff;
+    background-color: #87bba275;
+    padding: 20px;
+}
+
+.display_inline {
+    display: inline;
+}  
+
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.paragraph {
+    margin-top: -10px;
+    padding: 10px;
+}
+
+.fixed{
+    position: fixed
+}
+
