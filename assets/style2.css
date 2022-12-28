@@ -91,6 +91,8 @@ a:hover {
     background-image:
     linear-gradient(to top, rgb(194, 168, 116), rgb(0, 0, 0));
     align-items: center;
+    width:100%;
+    padding: 50px;
 
 }
 
@@ -106,11 +108,11 @@ a:hover {
     flex: 1 0 200px;
     margin: 125px;
     padding-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 500px;
 }
 
-.about{
+.about-header{
     font-size: 70px;
 }
 
@@ -123,16 +125,11 @@ hr {
 
 .profile_picture{
     height: auto;
-    flex: 1 1 50px;  
-    object-fit:contain;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-left: 100px;
-    padding: 20px;
-    border-radius: 200px;
-    /* max-width: 400px; */
-    max-width: 30%;
-    min-width: 325px}
+    width: 400px;
+    max-height:400px;
+    margin-top: 40px;
+    border-radius: 300px;
+}
 
 .center {
     margin: 0 auto;
@@ -143,6 +140,40 @@ hr {
 }
 
 .paragraph {
-    margin-top: -10px;
+    margin-top: 10px;
     padding: 10px;
+}
+
+.portfolio{
+    /* background-image:
+    linear-gradient(to bottom, rgb(194, 168, 116), rgba(0, 0, 0, 0.102)); */
+    background-color: var(--gold);
+    align-items: center;
+    width:100%;
+    padding: 50px; 
+}
+
+.portfolio-header{
+    font-size: 50px;
+}
+
+.projects{
+    margin:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.main-project{
+    flex:2 1 200px;
+    max-width: 600px;
+    margin: 10px;
+
+}
+
+.project-picture{
+    flex:1 1 200px;
+    max-width: 300px;
+    margin: 10px;
 }
