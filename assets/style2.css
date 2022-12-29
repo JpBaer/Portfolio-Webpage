@@ -11,6 +11,9 @@
     /* background-color: #000000; */
 }
 
+html{
+    scroll-behavior: smooth;;
+  }
 
 body {
     background-color: #000000;
@@ -47,6 +50,8 @@ nav{
     margin-top: 5px;
 }
 
+
+
 span{
     color: var(--gold);
 }
@@ -58,6 +63,15 @@ nav ul li{
     border-right: 1px solid #fff;
     padding-right: 10px;
     }
+
+.contact_section {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+
+    }
+
+
 
 footer {
     width: 100%;
@@ -161,19 +175,49 @@ hr {
     margin:30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 
 }
 
+
 .main-project{
+    width:1200px;
+    height:400px;
     flex:2 1 200px;
-    max-width: 600px;
+    
     margin: 10px;
+    border: 3px black solid;
+ 
+    border-bottom: 30px black solid; 
 
 }
 
 .project-picture{
+    width:1200px;
+    height:400px;
     flex:1 1 200px;
-    max-width: 300px;
     margin: 10px;
+    border: 3px black solid;  
+    border-bottom: 30px black solid;
+    
+}
+
+.image-holder{
+    position:relative;
+    
+}
+
+.caption{
+    position: absolute;
+    width: 283px;
+    height:50px;
+    bottom: 0px;
+    left: 0px;
+    color:var(--gold);
+    background-color: #000000;
+    text-align: center;
+}
+
+.contact{
+    margin: 20px;
 }

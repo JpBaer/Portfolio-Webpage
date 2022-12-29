@@ -140,3 +140,6 @@ a:hover {
     position: fixed
 }
 
+.caption{
+    position: absolute;
+}

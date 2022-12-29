@@ -17,14 +17,14 @@
             <h3 class = "sublogo"> <span>Full-Stack </span>Developer</h3>
           </div>
             <ul>
-                <li><a href ='#'>Github</a></li>
-                <li><a href ='#'>Portfolio</a></li>
-                <li><a href ='#'>About Me</a></li>
-                <li><a href ='#'>Contact</a></li>
+                <li><a href ='https://github.com/' target="_blank" rel="norefferer noopener">Github</a></li>
+                <li><a href ='#PortfolioSection'>Portfolio</a></li>
+                <li><a href ='#AboutSection'>About Me</a></li>
+                <li><a href ='#ContactForm'>Contact</a></li>
             </ul>
         </nav>
     </div>
-    <section class = "main-section">
+    <section class = "main-section" id = 'AboutSection'>
     
       <div class = "flex">
       <img class = "profile_picture" src="./assets/images/5U1A3759.JPG" alt="Profile Picture">
@@ -40,19 +40,65 @@
       
     </section>
 
-   <section class = "portfolio">
+   <section class = "portfolio" id = 'PortfolioSection'>
     <h1 class = "portfolio-header">Project Portfolio</h1>
     <hr>
     <div class = "projects">
+
+    
+     <!-- <a href="https://github.com/JpBaer/Accessibility_Code_Refactor">  -->
       <img class = "main-project" src = "./assets/images/pexels-andy-vu-3244513.jpg" alt = "">
-      <img class = "project-picture" src = "./assets/images/pexels-eberhard-grossgasteiger-1699030.jpg" alt = " ">
-      <img class = "project-picture" src = "./assets/images/pexels-hert-niks-3224156.jpg" alt = " ">
+    <!-- </a> -->
+      <h2 class = "caption"> Accesibillity Code Refractor</h2>
+    
+      <!-- <a href="https://github.com/">  -->
+        <img class = "project-picture" src = "./assets/images/pexels-eberhard-grossgasteiger-1699030.jpg" alt = " ">
+      <!-- </a> -->
+        <h2 class = "caption">Blackjack Game in Python</h2>
+     
+      <!-- <a href ="https://github.com/">  -->
+        <img class = "project-picture" src = "./assets/images/pexels-hert-niks-3224156.jpg" alt = " "> 
+      <!-- </a> -->
+        <h2 class = "caption">Machine Learning Pickup and Delivery in Python</h2>
+    
+     <!-- <a href = "https://github.com/">  -->
       <img class = "project-picture" src = "./assets/images/pexels-jacob-colvin-1761279.jpg" alt = "">
-      <img class = "project-picture" src = "./assets/images/pexels-rifqi-ramadhan-884547.jpg" alt = "">
+     <!-- </a> -->
+        <h2 class = "caption">Project 4</h2>
+      
+     
+     <!-- <a href = "https://github.com/" > -->
+       <img class = "project-picture" src = "./assets/images/pexels-rifqi-ramadhan-884547.jpg" alt = "">
+       <!-- </a> -->
+        <h2 class = "caption">Project 5</h2>
+     
 
     </div>
 
    </section>
+
+
+   <section class ="contact_section" id = "ContactForm">
+    <h2>Contact</h2>
+
+    <div class = "contact">
+    <form method="post" action="contact-form-process.php">
+        
+        <label> First Name </label>
+        <input type="text" name="firstname">
+
+        <label> Last Name </label>
+        <input type="text" name="lastname">
+
+        <label> Email </label>
+        <input type="text" name="Email">
+
+        <label> Message </label>
+        <input type="text" name="Message">
+    </div>
+    
+</section>
+
 
 
     <footer>
