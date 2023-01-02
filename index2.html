@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/reset.css">
+  
     <link rel="stylesheet" href="./assets/style2.css">
+    <script src="https://kit.fontawesome.com/ddfdce159e.js" crossorigin="anonymous"></script>
     <title>Landing Page</title>
   </head>
 
   <body>
+
+<!-- Hero Section -->
 
     <div class="hero">
         <nav>
@@ -20,10 +24,13 @@
                 <li><a href ='https://github.com/' target="_blank" rel="norefferer noopener">Github</a></li>
                 <li><a href ='#PortfolioSection'>Portfolio</a></li>
                 <li><a href ='#AboutSection'>About Me</a></li>
-                <li><a href ='#ContactForm'>Contact</a></li>
+                <li><a href ='#contactSection'>Contact</a></li>
             </ul>
         </nav>
     </div>
+
+
+<!-- About Section -->
     <section class = "main-section" id = 'AboutSection'>
     
       <div class = "flex">
@@ -31,7 +38,8 @@
       <div class = "about_container">
         <h1 class = about-header>About <span>Me</span></h1>
           <hr>
-        <p class = "center paragraph"> I am Jorgen Baertsch, a back-end web developer with a background in Aerospace and Audio Engineering. I am located in Seattle, WA and
+        <p class = "center paragraph">
+          I am Jorgen Baertsch, a back-end web developer with a background in Aerospace and Audio Engineering. I am located in Seattle, WA and
             am currently working at Lost Boys Recording Studios as a producer and mixing engineer.  On top of my current career in music I am planning on transitioning to career
             as a software developer focusing on back-end development and machine learning.
         </p>
@@ -40,37 +48,51 @@
       
     </section>
 
-   <section class = "portfolio" id = 'PortfolioSection'>
+  <!-- Portfolio Section -->
+
+  <section class = "portfolio" id = 'PortfolioSection'>
     <h1 class = "portfolio-header">Project Portfolio</h1>
     <hr>
     <div class = "projects">
 
-    
-     <!-- <a href="https://github.com/JpBaer/Accessibility_Code_Refactor">  -->
-      <img class = "main-project" src = "./assets/images/pexels-andy-vu-3244513.jpg" alt = "">
-    <!-- </a> -->
-      <h2 class = "caption"> Accesibillity Code Refractor</h2>
-    
-      <!-- <a href="https://github.com/">  -->
-        <img class = "project-picture" src = "./assets/images/pexels-eberhard-grossgasteiger-1699030.jpg" alt = " ">
-      <!-- </a> -->
-        <h2 class = "caption">Blackjack Game in Python</h2>
-     
-      <!-- <a href ="https://github.com/">  -->
-        <img class = "project-picture" src = "./assets/images/pexels-hert-niks-3224156.jpg" alt = " "> 
-      <!-- </a> -->
-        <h2 class = "caption">Machine Learning Pickup and Delivery in Python</h2>
-    
-     <!-- <a href = "https://github.com/">  -->
-      <img class = "project-picture" src = "./assets/images/pexels-jacob-colvin-1761279.jpg" alt = "">
-     <!-- </a> -->
-        <h2 class = "caption">Project 4</h2>
-      
-     
-     <!-- <a href = "https://github.com/" > -->
-       <img class = "project-picture" src = "./assets/images/pexels-rifqi-ramadhan-884547.jpg" alt = "">
+      <!-- <div class = 'image'>
+        <a href="https://github.com/JpBaer/Accessibility_Code_Refactor">  -->
+         <img class = "main-project" cla src = "./assets/images/pexels-andy-vu-3244513.jpg" alt = "">
        <!-- </a> -->
-        <h2 class = "caption">Project 5</h2>
+         <h2 class = "caption"> Accesibillity Code Refractor</h2>
+       <!-- </div> -->
+     
+       <!-- <div class = 'image'>
+         <a href="https://github.com/">  -->
+           <img class = "project-picture" src = "./assets/images/pexels-eberhard-grossgasteiger-1699030.jpg" alt = " ">
+         <!-- </a> -->
+           <h2 class = "caption">Blackjack Game in Python</h2>
+       <!-- </div> -->
+
+
+       <!-- <div class = 'image'>
+         <a href ="https://github.com/">  -->
+           <img class = "project-picture" src = "./assets/images/pexels-hert-niks-3224156.jpg" alt = " "> 
+         <!-- </a> -->
+           <h2 class = "caption">Machine Learning Pickup and Delivery in Python</h2>
+       <!-- </div> -->
+
+
+       <!-- <div class = 'image'>
+        <a href = "https://github.com/">  -->
+         <img class = "project-picture" src = "./assets/images/pexels-jacob-colvin-1761279.jpg" alt = "">
+        <!-- </a> -->
+           <h2 class = "caption">Project 4</h2>
+        <!-- </div>  -->
+        
+
+
+       <!-- <div class = 'image'>
+        <a href = "https://github.com/" > -->
+          <img class = "project-picture" src = "./assets/images/pexels-rifqi-ramadhan-884547.jpg" alt = "">
+          <!-- </a> -->
+           <h2 class = "caption">Project 5</h2>
+        <!-- </div> -->
      
 
     </div>
@@ -78,26 +100,75 @@
    </section>
 
 
-   <section class ="contact_section" id = "ContactForm">
-    <h2>Contact</h2>
+  <!--  Contact Section -->
+<section class = "contact_section" id = "contactSection">
 
-    <div class = "contact">
-    <form method="post" action="contact-form-process.php">
+    <div class = "contact_header">
+        <h2>Contact Me</h2>
+        <p>If you're interested in working together send a message in the contact form below.</p>
+      </div>
+
+    <div class = "container">
+      <div class = "contactInfo">
+
+        <div class = "box">
+          <div class = "icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class = "text">
+            <h3>Location</h3>
+            <p>Seattle, Washington <br>98133 </p>
+          </div>
+          </div>
+          <div class = "box">
+          <div class = "icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+          <div class = "text">
+            <h3>Email</h3>
+            <p>Jorgenpaulmusic@gmail.com</p>
+          </div>
+          </div>
+
+          <div class = "box">
+          <div class = "icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+          <div class = "text">
+            <h3>Phone Number</h3>
+            <p>+1218-348-8032</p>
+          </div>
+          </div>
+
         
-        <label> First Name </label>
-        <input type="text" name="firstname">
+      </div>
 
-        <label> Last Name </label>
-        <input type="text" name="lastname">
+      <div class = "contactForm">
+        <form>
 
-        <label> Email </label>
-        <input type="text" name="Email">
+          <h2>Send Message</h2>
+          <div class = inputBox>
+            <input type = "text" name = '' required = 'required'>
+            <span>Full Name:</span>
+          </div>
 
-        <label> Message </label>
-        <input type="text" name="Message">
+          <div class = inputBox>
+            <input type = "text" name = '' required = 'required'>
+            <span>Email:</span>
+          </div>
+
+          <div class = inputBox>
+            <textarea required = 'required'></textarea>
+            <span>Type your message here...</span>
+          </div>
+
+
+          <div class = inputBox>
+            <input type = "submit" name = '' value ='Send'>
+
+          </div>
+
+        </form>
+      </div>
+
     </div>
-    
+
 </section>
+  
 
 
 

@@ -23,7 +23,7 @@ body {
     height:100vh;
     width: 100%;
     background-image:
-    linear-gradient(to top, rgba(194, 168, 116, 0), rgba(0, 0, 0, 0.49)),
+    linear-gradient(to top, rgba(0, 0, 0, 0) ,rgba(0, 0, 0, 0.49)),
    url(./images/5U1A3414.jpg);
     background-size: cover;
     background-position: center;
@@ -65,13 +65,161 @@ nav ul li{
     }
 
 .contact_section {
-    width: 100%;
-    padding: 30px;
-    text-align: center;
+
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(194, 168, 116, 0), var(--gold)),url(./images/pexels-isaac-garcia-9567598.jpg);
+    background-size:cover;
+
 
     }
 
+.contact_header{
+width: 800px;
+text-align:center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: column;
+}
 
+.contact_section span{
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.contact_header h2 {
+    font-size:40px;
+    font-weight: 500;
+}
+
+.contact_header p{
+    font-style: oblique;
+    font-weight: 250;
+
+    
+}
+
+.container{
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:30px;
+}
+
+.container .contactInfo {
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+   
+    /* flex-direction: column;
+     */
+}
+
+.box h3{
+    margin-top: 14px;
+    margin-bottom: 5px;
+    
+}
+
+.icon{
+   width:50px;
+    height:50px;
+    background: var(--gold);
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:10px
+    
+}
+
+.box .text{
+ display: flex;
+ padding-left: 20px;
+ flex-direction: column;
+ font-weight: 400px;
+
+}
+
+.contactForm{
+    width:50%;
+    padding:30px;
+    background: #fff;
+    border-radius: 5px;
+    /* border:1px solid #0000007a; */
+    box-shadow: 10px 10px 5px #00000033;
+    
+}
+
+.contactForm h2{
+    font-size:20px;
+    font-weight: 100px;
+    color: rgba(0, 0, 0, 0.596);
+    padding-bottom: 10px;
+    
+
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.contactForm .inputBox input, textarea{
+width:100%;
+border:none;
+outline:none;
+resize: none;
+padding-top:10px;
+padding-bottom:10px;
+margin-top: 0px;
+border-bottom: 1px solid #0000007a;
+color: rgba(0, 0, 0, 0.686);
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left:0px;
+    padding:2px;
+    font-size: 14px;
+
+}
+
+.contactForm .inputBox input:focus ~span,
+.contactForm .inputBox input:valid ~span,
+.contactForm .inputBox textarea:focus ~span,
+.contactForm .inputBox textarea:valid ~span{
+    color: var(--gold);
+    font-size: 14px;
+    transform: translateY(-16px);
+}
+
+.contactForm .inputBox input[type="submit"]
+{   width: 80px;
+    background-color: var(--gold);
+    border-radius: 10px;
+    color:#fff;
+    cursor: pointer;
+
+
+    }
 
 footer {
     width: 100%;
@@ -107,6 +255,7 @@ a:hover {
     align-items: center;
     width:100%;
     padding: 50px;
+    min-height:100vh;
 
 }
 
@@ -165,6 +314,8 @@ hr {
     align-items: center;
     width:100%;
     padding: 50px; 
+    position: relative;
+    min-height: 100vh;
 }
 
 .portfolio-header{
@@ -192,6 +343,13 @@ hr {
 
 }
 
+/* .image{
+    margin: 20px;
+    flex: 1 1 200px;
+    contain: content;
+    position: relative;
+} */
+
 .project-picture{
     width:1200px;
     height:400px;
@@ -210,9 +368,9 @@ hr {
 .caption{
     position: absolute;
     width: 283px;
-    height:50px;
-    bottom: 0px;
-    left: 0px;
+    height:40px;
+    bottom: 15px;
+    left: 10px;
     color:var(--gold);
     background-color: #000000;
     text-align: center;
@@ -220,4 +378,43 @@ hr {
 
 .contact{
     margin: 20px;
+}
+
+@media screen and (max-width: 991px){
+    .container{
+        width:100%;
+        flex-direction:column;
+        margin-bottom:40px;
+    }
+    .container .contactInfo {
+        width:60%;
+        margin-bottom: 20px;
+        
+    }
+
+    .contactForm {
+            width:60%;}
+}
+
+@media screen and (max-width: 768px) {
+    .projects{
+        display: inline-block;
+        margin:10px;
+    }
+    .main-project{
+      
+        width: 100%;
+        display:block;
+        margin:5px;
+    
+    }
+    
+    .project-picture{
+        
+    
+        width: 100%;
+        display:block;
+        margin:5px;
+    }
+  
 }
