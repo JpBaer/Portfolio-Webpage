@@ -11,14 +11,18 @@
     /* background-color: #000000; */
 }
 
+/* Makes links to sections scroll instead of jump */
 html{
     scroll-behavior: smooth;;
   }
 
+
+  /* Set defualt BG color */
 body {
     background-color: #000000;
 }
 
+/* Creates hero image section */
 .hero{
     height:100vh;
     width: 100%;
@@ -29,6 +33,7 @@ body {
     background-position: center;
 }
 
+/* Navigation Links */
 nav{
     display:flex;
     align-items: center;
@@ -51,11 +56,12 @@ nav{
 }
 
 
-
+/* Gold styling on page title */
 span{
     color: var(--gold);
 }
 
+/* nav link styling */
 nav ul li{
     list-style-type: none ;
     display:inline;
@@ -64,166 +70,13 @@ nav ul li{
     padding-right: 10px;
     }
 
-.contact_section {
-
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(to top, rgba(194, 168, 116, 0), var(--gold)),url(./images/pexels-isaac-garcia-9567598.jpg);
-    background-size:cover;
-
-
-    }
-
-.contact_header{
-width: 800px;
-text-align:center;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-flex-direction: column;
-}
-
-.contact_section span{
-    color: rgba(0, 0, 0, 0.596);
-}
-
-.contact_header h2 {
-    font-size:40px;
-    font-weight: 500;
-}
-
-.contact_header p{
-    font-style: oblique;
-    font-weight: 250;
-
-    
-}
-
-.container{
-    width: 80%;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    margin-top:30px;
-}
-
-.container .contactInfo {
-    width:50%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.container .contactInfo .box {
-    position: relative;
-    
-    padding: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-   
-    /* flex-direction: column;
-     */
-}
-
-.box h3{
-    margin-top: 14px;
-    margin-bottom: 5px;
-    
-}
-
-.icon{
-   width:50px;
-    height:50px;
-    background: var(--gold);
-    border-radius: 50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:10px
-    
-}
-
-.box .text{
- display: flex;
- padding-left: 20px;
- flex-direction: column;
- font-weight: 400px;
-
-}
-
-.contactForm{
-    width:50%;
-    padding:30px;
-    background: #fff;
-    border-radius: 5px;
-    /* border:1px solid #0000007a; */
-    box-shadow: 10px 10px 5px #00000033;
-    
-}
-
-.contactForm h2{
-    font-size:20px;
-    font-weight: 100px;
-    color: rgba(0, 0, 0, 0.596);
-    padding-bottom: 10px;
-    
-
-}
-
-.contactForm .inputBox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
-}
-
-.contactForm .inputBox input, textarea{
-width:100%;
-border:none;
-outline:none;
-resize: none;
-padding-top:10px;
-padding-bottom:10px;
-margin-top: 0px;
-border-bottom: 1px solid #0000007a;
-color: rgba(0, 0, 0, 0.686);
-}
-
-.contactForm .inputBox span{
-    position: absolute;
-    left:0px;
-    padding:2px;
-    font-size: 14px;
-
-}
-
-.contactForm .inputBox input:focus ~span,
-.contactForm .inputBox input:valid ~span,
-.contactForm .inputBox textarea:focus ~span,
-.contactForm .inputBox textarea:valid ~span{
-    color: var(--gold);
-    font-size: 14px;
-    transform: translateY(-16px);
-}
-
-.contactForm .inputBox input[type="submit"]
-{   width: 80px;
-    background-color: var(--gold);
-    border-radius: 10px;
-    color:#fff;
-    cursor: pointer;
-
-
+/* removes veritcal line from last link */
+li:last-child {
+    border-right:0;
     }
 
 footer {
     width: 100%;
-    background-color:#000000;
     padding: 20px;
     margin-top: 20px;
 }
@@ -233,14 +86,12 @@ h1 {
   font-weight: 500;
 }
 
-li:last-child {
-    border-right:0;
-}
 
 a {
     text-decoration: none;
 }
 
+/* Changes color of nav links when hovered */
 a:hover {
     color:var(--gold);
 
@@ -252,12 +103,12 @@ a:hover {
     justify-content: center; */
     background-image:
     linear-gradient(to top, rgb(194, 168, 116), rgb(0, 0, 0));
-    align-items: center;
     width:100%;
     padding: 50px;
     min-height:100vh;
 
 }
+
 
 .flex{
 
@@ -267,6 +118,7 @@ a:hover {
  
 }
 
+/* Parent class for all text in about section */
 .about_container {
     flex: 1 0 200px;
     margin: 125px;
@@ -279,6 +131,7 @@ a:hover {
     font-size: 70px;
 }
 
+/* Creates line under header */
 hr {
     align-content: center;
     width: 30%;
@@ -286,6 +139,7 @@ hr {
     margin-right:auto;
 }
 
+/* Creates circular profile image */
 .profile_picture{
     height: auto;
     width: 400px;
@@ -332,29 +186,44 @@ hr {
 
 
 .main-project{
-    width:1200px;
-    height:400px;
+    width:100%;
+    height:100%;
     flex:2 1 200px;
     
-    margin: 10px;
     border: 3px black solid;
  
     border-bottom: 30px black solid; 
 
 }
 
-/* .image{
-    margin: 20px;
-    flex: 1 1 200px;
-    contain: content;
+.image{
+    margin: 10px;
+    /* display:inline;
+    contain: content; */
     position: relative;
-} */
+    flex: 1 1 30%;
+    height: 400px;
+}
+
+.main-image{
+    margin: 10px;
+    /* display:inline;
+    contain: content; */
+    position: relative;
+    flex: 2 1 60%;
+    height: 400px;
+}
+
+.projects a{
+    height:100%;
+    width:100%;
+}
 
 .project-picture{
-    width:1200px;
-    height:400px;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
     flex:1 1 200px;
-    margin: 10px;
     border: 3px black solid;  
     border-bottom: 30px black solid;
     
@@ -367,18 +236,189 @@ hr {
 
 .caption{
     position: absolute;
-    width: 283px;
+    width: 50%;
     height:40px;
     bottom: 15px;
-    left: 10px;
     color:var(--gold);
+    padding:5px;
     background-color: #000000;
     text-align: center;
+    vertical-align: middle;
 }
 
-.contact{
-    margin: 20px;
+
+
+/* Defining cantact section with background image and color gradient */
+.contact_section {
+
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(194, 168, 116, 0), var(--gold)),url(./images/pexels-isaac-garcia-9567598.jpg);
+    background-size:cover;
+
+
+    }
+
+    /* Contains title and paragraph text */
+.contact_header{
+width: 800px;
+text-align:center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: column;
 }
+
+/* Changes color of text in contaxt box */
+.contact_section span{
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.contact_header h2 {
+    font-size:40px;
+}
+
+
+.contact_header p{
+    font-style: oblique;
+}
+
+/* Creates container for contact info and message box */
+.container{
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:30px;
+}
+
+
+.container .contactInfo {
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+   
+    /* flex-direction: column;
+     */
+}
+
+.box h3{
+    margin-top: 14px;
+    margin-bottom: 5px;
+    
+}
+
+
+/* Styling the pixart icons */
+.icon{
+   width:50px;
+    height:50px;
+    background: var(--gold);
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:10px
+    
+}
+
+/* positioning all text elements in contact info */
+.box .text{
+ display: flex;
+ padding-left: 20px;
+ flex-direction: column;
+ font-weight: 400px;
+
+}
+
+
+/* Styling and positioning contact form */
+.contactForm{
+    width:50%;
+    padding:30px;
+    background: #fff;
+    border-radius: 5px;
+    /* border:1px solid #0000007a; */
+    box-shadow: 10px 10px 5px #00000033;
+    
+}
+
+.contactForm h2{
+    font-size:20px;
+    color: rgba(0, 0, 0, 0.596);
+    padding-bottom: 10px;
+    
+
+}
+
+/* Parent div for each input box */
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+/* Styles input boxs of contact form */
+
+.contactForm .inputBox input, textarea{
+width:100%;
+border:none;
+outline:none;
+resize: none;
+padding-top:10px;
+padding-bottom:10px;
+margin-top: 0px;
+border-bottom: 1px solid #0000007a;
+color: rgba(0, 0, 0, 0.686);
+}
+
+/* styles default state of input box text */
+.contactForm .inputBox span{
+    position: absolute;
+    left:0px;
+    padding:2px;
+    font-size: 14px;
+
+}
+
+/* Moves text inside input boxes above the boxes and changes their color */
+/* focus changes it when clicked, valid changes it when there is text in the box */
+
+.contactForm .inputBox input:focus ~span,
+.contactForm .inputBox input:valid ~span,
+.contactForm .inputBox textarea:focus ~span,
+.contactForm .inputBox textarea:valid ~span{
+    color: var(--gold);
+    font-size: 14px;
+    transform: translateY(-16px);
+}
+
+/* Styles the Send button on contact form */
+
+.contactForm .inputBox input[type="submit"]
+{   width: 80px;
+    background-color: var(--gold);
+    border-radius: 10px;
+    color:#fff;
+    cursor: pointer;
+
+
+    }
 
 @media screen and (max-width: 991px){
     .container{
@@ -405,7 +445,7 @@ hr {
       
         width: 100%;
         display:block;
-        margin:5px;
+      
     
     }
     
@@ -414,7 +454,7 @@ hr {
     
         width: 100%;
         display:block;
-        margin:5px;
+        
     }
   
 }
