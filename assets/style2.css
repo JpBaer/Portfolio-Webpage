@@ -203,6 +203,7 @@ hr {
     position: relative;
     flex: 1 1 30%;
     height: 400px;
+    object-fit: fill;
 }
 
 .main-image{
