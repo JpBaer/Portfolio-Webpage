@@ -34,7 +34,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ## Usage
-When the application is launched the Hoerison Homepage will be available and will appear as per the screenshot below.
+When the application is launched the Portfolio will be available and will appear as per the screenshot below.
 
 ![WebsiteScreenshot](./assets/images/Screen%20Shot%202023-01-01%20at%201.22.48%20PM.jpg)
 ##
